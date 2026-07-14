@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Smart Lender</title>
+  </head>
+
+  <body>
+    <h1>Loan Prediction System</h1>
+
+    <form action="/predict" method="POST">
+      <label>Gender:</label>
+      <input name="gender" value="1" /><br /><br />
+
+      <label>Married:</label>
+      <input name="married" value="1" /><br /><br />
+
+      <label>Dependents:</label>
+      <input name="dependents" value="0" /><br /><br />
+
+      <label>Education:</label>
+      <input name="education" value="0" /><br /><br />
+
+      <label>Self Employed:</label>
+      <input name="self_employed" value="0" /><br /><br />
+
+      <label>Applicant Income:</label>
+      <input name="income" value="5000" /><br /><br />
+
+      <label>Co Applicant Income:</label>
+      <input name="co_income" value="2000" /><br /><br />
+
+      <label>Loan Amount:</label>
+      <input name="loan_amount" value="100" /><br /><br />
+
+      <label>Loan Term:</label>
+      <input name="loan_term" value="360" /><br /><br />
+
+      <label>Credit History:</label>
+      <input name="credit_history" value="1" /><br /><br />
+
+      <label>Property Area:</label>
+      <input name="property_area" value="2" /><br /><br />
+
+      <button type="submit">Predict</button>
+    </form>
+
+    <h2>{{prediction}}</h2>
+  </body>
+</html>
